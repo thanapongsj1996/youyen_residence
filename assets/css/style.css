@@ -1,0 +1,11 @@
+html, body{
+    height: 5000px;
+    background: #F9F9F9;
+    font-family: 'Prompt', sans-serif;
+}
+
+#navbar{
+    padding: 10px;
+    transition: 0.5s;
+    
+}
