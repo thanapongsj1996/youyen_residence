@@ -1,11 +1,65 @@
-html, body{
-    height: 5000px;
+html,
+body {
+    height: 100%;
     background: #F9F9F9;
     font-family: 'Prompt', sans-serif;
+    color: #202020
 }
 
-#navbar{
-    padding: 10px;
-    transition: 0.5s;
-    
+
+/* Carousel */
+
+.carousel,
+.carousel-inner,
+.carousel-item,
+.carousel-inner .active {
+    height: 100%;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-caption {
+    top: 40%;
+}
+
+.blackscreen {
+    background: rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+
+/* underline */
+
+.border-short-bottom {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.border-short-bottom::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -50px;
+    background: #595959;
+}
+
+
+/* icon style */
+
+.icon-style {
+    color: rgb(149, 149, 155)
+}
+
+.icon-style:hover {
+    color: rgb(165, 165, 168)
 }
