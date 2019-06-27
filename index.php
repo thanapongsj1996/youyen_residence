@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Prevent Cache  -->
+  <link rel="stylesheet" href="assets/css/style.css?v=<?=time()?>">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
@@ -32,14 +33,7 @@
       width: 0%;
     }
 
-    .footer {
-      background: rgb(37, 37, 37);
-      color: #D8D8D8;
-      font-size: 0.9rem;
-      height: min-content;
-      line-height: 60px;
-      text-align: center;
-    }
+    
   </style>
 </head>
 
