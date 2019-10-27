@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/56a5f7cfae.js"></script>
 
-  <title>You yen Residence</title>
+  <title>Youyen Residence</title>
   <style>
     html {
       scroll-behavior: smooth;
@@ -42,7 +42,7 @@
   <div class="fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgba(0, 0, 0 , 0.6); padding:5px">
       <div class="container">
-        <a class="navbar-brand" href="#body">You Yen Residence</a>
+        <a class="navbar-brand" href="#body">Youyen Residence</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -54,7 +54,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#rooms">Rooms</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="#location">Location</a>
             </li>
             <li class="nav-item">
@@ -78,27 +78,27 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <div class="carousel-img" style="background-image: url('https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80')">
+        <div class="carousel-img" style="background-image: url('./assets/image/youyen_bg.jpg')">
           <div class="carousel-caption">
-            <h1 class="display-4 font-weight-bold">You Yen Residence @ Phuket</h1>
+            <h1 class="display-4 font-weight-bold">Youyen Residence @ Phuket</h1>
             <p class="lead">Welcome to Phuket, The happiness place</p>
           </div>
           <div class="blackscreen"></div>
         </div>
       </div>
       <div class="carousel-item">
-        <div class="carousel-img" style="background-image: url('https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80')">
+        <div class="carousel-img" style="background-image: url('./assets/image/youyen_bg2.jpg')">
           <div class="carousel-caption">
-            <h1 class="display-4 font-weight-bold">You Yen Residence @ Phuket</h1>
+            <h1 class="display-4 font-weight-bold">Youyen Residence @ Phuket</h1>
             <p class="lead">Welcome to Phuket, The happiness place</p>
           </div>
           <div class="blackscreen"></div>
         </div>
       </div>
       <div class="carousel-item">
-        <div class="carousel-img" style="background-image: url('https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80')">
+        <div class="carousel-img" style="background-image: url('./assets/image/youyen_bg4.jpg')">
           <div class="carousel-caption">
-            <h1 class="display-4 font-weight-bold">You Yen Residence @ Phuket</h1>
+            <h1 class="display-4 font-weight-bold">Youyen Residence @ Phuket</h1>
             <p class="lead">Welcome to Phuket, The happiness place</p>
           </div>
           <div class="blackscreen"></div>
@@ -124,6 +124,14 @@
         <h4 class="card-title mt-3">Free Wifi</h4>
       </div>
       <div class="col-6 col-md-4">
+        <i class="fas fa-car-side fa-6x icon-style"></i>
+        <h4 class="card-title mt-3">Parking Area</h4>
+      </div>
+      <div class="col-6 col-md-4">
+        <i class="fas fa-id-card-alt fa-6x icon-style"></i>
+        <h4 class="card-title mt-3">Key Card</h4>
+      </div>
+      <!-- <div class="col-6 col-md-4">
         <i class="fas fa-wifi fa-6x icon-style"></i>
         <h4 class="card-title mt-3">Free Wifi</h4>
       </div>
@@ -133,15 +141,7 @@
       </div>
       <div class="col-6 col-md-4">
         <i class="fas fa-wifi fa-6x icon-style"></i>
-        <h4 class="card-title mt-3">Free Wifi</h4>
-      </div>
-      <div class="col-6 col-md-4">
-        <i class="fas fa-wifi fa-6x icon-style"></i>
-        <h4 class="card-title mt-3">Free Wifi</h4>
-      </div>
-      <div class="col-6 col-md-4">
-        <i class="fas fa-wifi fa-6x icon-style"></i>
-        <h4 class="card-title mt-3">Free Wifi</h4>
+        <h4 class="card-title mt-3">Free Wifi</h4> -->
       </div>
     </div>
 
@@ -150,10 +150,10 @@
   <!-- 4Images -->
   <section>
     <div class="row container-fluid p-0 m-0">
-      <div class="col-6 col-sm p-0"><img style="width:100%" src="https://images.unsplash.com/photo-1499933374294-4584851497cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80" /></div>
-      <div class="col-6 col-sm p-0"><img style="width:100%" src="https://images.unsplash.com/photo-1499933374294-4584851497cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80" /></div>
-      <div class="col-6 col-sm p-0"><img style="width:100%" src="https://images.unsplash.com/photo-1499933374294-4584851497cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80" /></div>
-      <div class="col-6 col-sm p-0"><img style="width:100%" src="https://images.unsplash.com/photo-1499933374294-4584851497cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80" /></div>
+      <div class="col-6 col-sm p-0"><img style="width:100%" src="./assets/image/room1.jpg" ></div>
+      <div class="col-6 col-sm p-0"><img style="width:100%" src="./assets/image/room2.jpg" ></div>
+      <div class="col-6 col-sm p-0"><img style="width:100%" src="./assets/image/room3.jpg" ></div>
+      <div class="col-6 col-sm p-0"><img style="width:100%" src="./assets/image/room4.jpg" ></div>
     </div>
   </section>
 
