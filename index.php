@@ -33,7 +33,6 @@
       width: 0%;
     }
 
-    
   </style>
 </head>
 
@@ -48,16 +47,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item" id="nav-service">
               <a class="nav-link" href="#services">Services</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="nav-rooms">
               <a class="nav-link" href="#rooms">Rooms</a>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item" id="nav-location">
               <a class="nav-link" href="#location">Location</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="nav-contact">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
@@ -96,7 +95,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <div class="carousel-img" style="background-image: url('./assets/image/youyen_bg4.jpg')">
+        <div class="carousel-img" style="background-image: url('./assets/image/youyen_bg3.jpg')">
           <div class="carousel-caption">
             <h1 class="display-4 font-weight-bold">Youyen Residence @ Phuket</h1>
             <p class="lead">Welcome to Phuket, The happiness place</p>
@@ -130,18 +129,6 @@
       <div class="col-6 col-md-4">
         <i class="fas fa-id-card-alt fa-6x icon-style"></i>
         <h4 class="card-title mt-3">Key Card</h4>
-      </div>
-      <!-- <div class="col-6 col-md-4">
-        <i class="fas fa-wifi fa-6x icon-style"></i>
-        <h4 class="card-title mt-3">Free Wifi</h4>
-      </div>
-      <div class="col-6 col-md-4">
-        <i class="fas fa-wifi fa-6x icon-style"></i>
-        <h4 class="card-title mt-3">Free Wifi</h4>
-      </div>
-      <div class="col-6 col-md-4">
-        <i class="fas fa-wifi fa-6x icon-style"></i>
-        <h4 class="card-title mt-3">Free Wifi</h4> -->
       </div>
     </div>
 
@@ -215,14 +202,50 @@
   </section>
 
   <!-- Location -->
-  <section id="location" class="container my-3 py-5" style="height:500px">
+  <section id="location" class="container my-3 py-5">
     <h1 class="border-short-bottom">Location</h1>
+    <div>
+      <img class="w-75" style="display: block; margin-left: auto; margin-right: auto;" src="./assets/image/youyen_map.png" >
+    </div>
   </section>
 
   <!-- Contact Us -->
   <section id="contact" class="py-5" style="height:500px;background-color: #EDECEC">
     <div class="container">
       <h1 class="border-short-bottom">Contact Us</h1>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="card h-100 card-contact">
+            <div class="card-body">
+              <i class="fa fa-phone-square fa-4x py-2" style="color:#FF0A0A;" aria-hidden="true"></i>
+              <h4 class="card-title">Phone</h4>
+              <p class="card-text">(+66)89-649-8647</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 card-contact">
+            <div class="card-body">
+              <i class="fab fa-line fa-4x py-2" style="color:#00C300;" aria-hidden="true"></i>
+              <h4 class="card-title">Line ID</h4>
+              <p class="card-text">iamthanapong</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 card-contact">
+            <div class="card-body">
+              <i class="fab fa-facebook-square fa-4x py-2" style="color:#3B5998;" aria-hidden="true"></i>
+              <h4 class="card-title">Facebook</h4>
+              <p class="card-text">
+                <a target="_blank" href="https://web.facebook.com/phuket.youyen.residence/">
+                  Youyen Residence Phuket
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -250,7 +273,37 @@
       var height = document.documentElement.scrollHeight - document.documentElement.clientHeight; //max height - screen height
       var scrolled = (winScroll / height) * 100;
       document.getElementById("myBar").style.width = scrolled + "%";
+
+      const serviceScrolled = 11;
+      const roomsScrolled = 31;
+      const locationScrolled = 88;
+      const contactScrolled = 97;
+
+      if (scrolled < serviceScrolled) {
+        navAction(0, 0, 0, 0)
+      } if (scrolled >= serviceScrolled) {
+        navAction(1, 0, 0, 0)
+      } if (scrolled >= roomsScrolled) {
+        navAction(0, 1, 0, 0)
+      } if (scrolled >= locationScrolled) {
+        navAction(0, 0, 1, 0)
+      } if (scrolled >= contactScrolled) {
+        navAction(0, 0, 0, 1)
+      }
+
     }
+
+    function navAction(s, r, l, c) {
+      if (s)  $("#nav-service").addClass("active");
+      if (!s) $("#nav-service").removeClass("active");
+      if (r)  $("#nav-rooms").addClass("active");
+      if (!r) $("#nav-rooms").removeClass("active");
+      if (l)  $("#nav-location").addClass("active");
+      if (!l) $("#nav-location").removeClass("active");
+      if (c)  $("#nav-contact").addClass("active");
+      if (!c) $("#nav-contact").removeClass("active");
+    }
+
   </script>
 </body>
 

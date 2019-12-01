@@ -1,11 +1,10 @@
 html,
 body {
-    height: 100%;
-    background: #F9F9F9;
-    font-family: 'Prompt', sans-serif;
-    color: #202020;
+  height: 100%;
+  background: #f9f9f9;
+  font-family: "Prompt", sans-serif;
+  color: #202020;
 }
-
 
 /* Carousel */
 
@@ -13,62 +12,64 @@ body {
 .carousel-inner,
 .carousel-item,
 .carousel-inner .active {
-    height: 100%;
+  height: 100%;
 }
 
 .carousel-img {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .carousel-caption {
-    top: 40%;
+  top: 40%;
 }
 
 .blackscreen {
-    background: rgba(0, 0, 0, 0.1);
-    height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  height: 100%;
 }
-
 
 /* underline */
 
 .border-short-bottom {
-    position: relative;
-    padding: 20px;
-    margin-bottom: 25px;
-    text-align: center;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 .border-short-bottom::after {
-    position: absolute;
-    content: "";
-    width: 100px;
-    height: 3px;
-    bottom: 0;
-    left: 50%;
-    margin-left: -50px;
-    background: #595959;
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 3px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -50px;
+  background: #595959;
 }
-
 
 /* icon style */
 
 .icon-style {
-    color: rgb(149, 149, 155)
+  color: rgb(149, 149, 155);
 }
 
 .icon-style:hover {
-    color: rgb(165, 165, 168)
+  color: rgb(165, 165, 168);
 }
 
 .footer {
-    background: rgb(37, 37, 37);
-    color: #D8D8D8;
-    font-size: 0.9rem;
-    height: min-content;
-    line-height: 60px;
-    text-align: center;
+  background: rgb(37, 37, 37);
+  color: #d8d8d8;
+  font-size: 0.9rem;
+  height: min-content;
+  line-height: 60px;
+  text-align: center;
+}
+
+.card-contact {
+  box-shadow: 1px 0px 7px #8888887d;
 }
